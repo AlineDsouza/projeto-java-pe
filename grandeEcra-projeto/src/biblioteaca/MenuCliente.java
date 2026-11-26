@@ -34,7 +34,7 @@ public class MenuCliente {
                     break;
                 case 2:
                     System.out.println("Consultar cartaz cinematografico ");
-                    //consultarArquivos();
+                    consultarArquivos("Files/GrandeEcra_Cartaz.txt");
                     break;
                 case 03:
                     System.out.println("Pesquisar filmes");
