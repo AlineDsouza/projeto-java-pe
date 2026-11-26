@@ -2,6 +2,8 @@ package biblioteaca;
 
 import java.util.Scanner;
 
+import static biblioteaca.FuncoesCliente.*;
+
 public class MenuCliente {
     public static void menuCliente(){
         Scanner input = new Scanner(System.in);
@@ -28,23 +30,28 @@ public class MenuCliente {
                     break;
                 case 1:
                     System.out.println("Novo registo");
-
+                    novoRegisto();
                     break;
                 case 2:
                     System.out.println("Consultar cartaz cinematografico ");
+                    //consultarArquivos();
                     break;
                 case 03:
                     System.out.println("Pesquisar filmes");
+                    pesquisarFilme();
                 case 04:
                     System.out.println("Visualizar mapa de uma sala");
+                    visualizarMapa();
                 case 05:
                     System.out.println("Reservar bilhetes");
-
+                    reservarBilhetes();
                 case 06:
                     System.out.println("Recomendar filmes");
+                    recomendarFilmes();
                     break;
                 case 07:
                     System.out.println("Quiz cinematografico ");
+                    quiz();
                     break;
                 default:
                     System.out.println("\nOpção Inválida: " + opcao + "\n");

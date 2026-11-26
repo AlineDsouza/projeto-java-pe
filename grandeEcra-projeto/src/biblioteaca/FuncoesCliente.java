@@ -1,10 +1,15 @@
 package biblioteaca;
 
+import java.io.File;
+
 public class FuncoesCliente {
+
     public static void novoRegisto(){
         System.out.println("teste");
     }
-    public static void consultarArquivo(){
+
+    public static void consultarArquivos(String caminho){
+        File ficheiroConsulta = new File(caminho);
         System.out.println("teste");
     }
     public static void pesquisarFilme(){
